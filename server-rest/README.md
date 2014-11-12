@@ -1,6 +1,7 @@
 # server-rest
 
 FIXME
+Dummy commit - Testing slack/github integration
 
 ## Prerequisites
 
