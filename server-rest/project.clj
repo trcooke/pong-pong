@@ -4,8 +4,8 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.2.0"]
-                 [ring/ring-defaults "0.1.2"]]
-  :plugins [[lein-ring "0.8.13"]
+                 [cheshire "5.3.1"]]
+  :plugins [[lein-ring "0.8.11"]
             [lein-midje "3.1.3"]]
   :ring {:handler server-rest.core.handler/app}
   :profiles
