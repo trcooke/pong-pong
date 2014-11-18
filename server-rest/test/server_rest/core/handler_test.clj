@@ -11,4 +11,4 @@
 (fact "Build a league, given a name and description"
   (let [response (handler/app (mock/request :put "/league" "{\"name\": \"pongpong\",\"description\":\"Only Tim Knows\"}"))]
     (:status response) => 201
-    (:body response) => "{\"name\":\"pongpong\",\"description\":\"Only Tim Knows\"}"))
+    (:body response) => "{\"name\":\"pongpong\",\"description\":\"Only Tim Knows\",\"players\":{}}"))
