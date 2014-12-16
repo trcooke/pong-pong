@@ -10,3 +10,16 @@
   (let [database (get-database)]
     (mc/insert-and-return database "leagues" league))
   )
+
+(defn get-leagues [name]
+  (let [database (get-database)]
+    (mc/find-maps database "leagues" {:name name})))
+
+(defn remove-leagues [name]
+  (let [database (get-database)]
+    (mc/remove database "leagues" {:name name}))
+  )
+
+(defn remove-all-leagues []
+  (let [database (get-database)]
+    (mc/remove database "leagues")))
