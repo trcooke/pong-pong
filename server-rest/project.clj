@@ -4,6 +4,7 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.2.0"]
+                 [clj-http "1.0.1"]
                  [cheshire "5.3.1"]]
   :plugins [[lein-ring "0.8.11"]
             [lein-midje "3.1.3"]]
